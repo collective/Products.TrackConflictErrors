@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="Products.TrackConflictErrors">
+   <!-- Resource directory for javascripts -->
+    <browser:resourceDirectory
+        name="Products.TrackConflictErrors.javascripts"
+        directory="js"
+        />
+
+    <!-- Resource directory for stylesheets -->
+    <browser:resourceDirectory
+        name="Products.TrackConflictErrors.stylesheets"
+        directory="css"
+        />
+    <browser:page
+        name="tracker"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="zope2.View"
+        class=".views.TrackerView"
+        template="TrackerReport.pt"
+        />
+   <browser:page
+        name="tracker-clear"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="zope2.View"
+        class=".views.ClearTracker"
+        />
+
+</configure>

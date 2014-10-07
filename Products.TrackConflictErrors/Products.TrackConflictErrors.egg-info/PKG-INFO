@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: Products.TrackConflictErrors
+Version: 1.0
+Summary: This Products aims to process the events.log file to count number of conflict errors
+Home-page: http://svn.plone.org/svn/collective/
+Author: vikaspedia Team
+Author-email: indg@cdac.in
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        This product may contain traces of nuts.
+        
+        Changelog
+        =========
+        
+        1.0dev (unreleased)
+        -------------------
+        
+        - Initial release
+        
+Keywords: Tracking Plone Conflict Errors
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
