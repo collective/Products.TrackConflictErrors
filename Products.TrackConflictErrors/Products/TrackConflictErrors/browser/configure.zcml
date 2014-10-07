@@ -30,4 +30,10 @@
         class=".views.ClearTracker"
         />
 
+   <browser:page
+        name="tracker-start"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="zope2.View"
+        class=".views.StartTracker"
+        />
 </configure>

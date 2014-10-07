@@ -27,7 +27,8 @@ def add_to_count(context, time=None,action=None):
          This Method will add the time on which conflict occur and name of action which creates the conflict
     """
     annotations = setupAnnotations(context)
-    annotations[TRACKBY]['count'].append(dict(time=time,action=action))
+    if dict(time=time,action=action) not in annotations[TRACKBY]['count']:
+        annotations[TRACKBY]['count'].append(dict(time=time,action=action))
  
  
 def clear(context):
@@ -40,7 +41,8 @@ def clear(context):
 
 def get_Results(context):
     annotations = setupAnnotations(context)
-    annotations[TRACKBY]['count'].append(dict(time=datetime.datetime.now(),action='Moderate Comments'))
+    if dict(time=datetime.datetime.now(),action='Moderate Comments') not in annotations[TRACKBY]['count']:
+        annotations[TRACKBY]['count'].append(dict(time=datetime.datetime.now(),action='Moderate Comments'))
     #annotations = IAnnotations(context)
     return annotations.get(TRACKBY, {})
               

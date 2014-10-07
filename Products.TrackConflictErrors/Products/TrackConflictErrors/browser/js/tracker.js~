@@ -16,6 +16,9 @@ $(document).ready(function(){
                 }
             });
         });
-        
+        $("input[name='form.button.refresh']").click(function (e) {
+            e.preventDefault();
+            location.reload();
+        });
 
 });
