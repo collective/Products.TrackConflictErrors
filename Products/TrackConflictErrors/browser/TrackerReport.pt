@@ -34,7 +34,7 @@
 	</p>
         <p>
             <a href="http://plone.org/documentation/error"
-               i18n:translate="description_tracker_rerference_link">
+               i18n:translate="description_tracker_rerference_link" target="_blank">
                 Refer to the plone.org error reference for more information about
                 these conflict errors.
             </a>
@@ -52,6 +52,11 @@
                            name="form.button.startTracker"
                            value="Start Tracker Logging"
                            i18n:attributes="value label_startTracker;" />
+                    <input class="submit-widget"
+                           type="submit"
+                           name="form.button.stopTracker"
+                           value="Stop Tracker Logging"
+                           i18n:attributes="value label_stopTracker;" />
                     <input class="submit-widget"
                            type="submit"
                            name="form.button.refresh"
