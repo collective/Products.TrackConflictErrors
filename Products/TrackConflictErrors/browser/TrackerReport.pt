@@ -34,7 +34,7 @@
 	</p>
         <p>
             <a href="http://plone.org/documentation/error"
-               i18n:translate="description_tracker_rerference_link">
+               i18n:translate="description_tracker_rerference_link" target="_blank">
                 Refer to the plone.org error reference for more information about
                 these conflict errors.
             </a>

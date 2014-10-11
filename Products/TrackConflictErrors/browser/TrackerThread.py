@@ -42,7 +42,6 @@ class TrackerThread(threading.Thread):
         with self.state:
             self.paused = False
             self.state.notify()  # unblock self if waiting
-            print "Thread Resumed Successfully"
 
     def pause(self):
         with self.state:

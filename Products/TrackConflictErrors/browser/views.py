@@ -21,7 +21,7 @@ class TrackerView(BrowserView):
         if result==dict():
            self.results={}
         else:
-            self.results=result['count'][::-1]
+            self.results=result['count']
         return self.results
 
     def getLastReset(self):
