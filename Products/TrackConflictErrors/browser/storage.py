@@ -40,10 +40,7 @@ def clear(context):
     annotations[TRACKBY]['reset']=datetime.datetime.now()
 
 def get_Results(context):
-    annotations = setupAnnotations(context)
-    if dict(time=datetime.datetime.now(),action='Moderate Comments') not in annotations[TRACKBY]['count']:
-        annotations[TRACKBY]['count'].append(dict(time=datetime.datetime.now(),action='Moderate Comments'))
-    #annotations = IAnnotations(context)
+    annotations = IAnnotations(context)
     return annotations.get(TRACKBY, {})
               
  

@@ -54,6 +54,11 @@
                            i18n:attributes="value label_startTracker;" />
                     <input class="submit-widget"
                            type="submit"
+                           name="form.button.stopTracker"
+                           value="Stop Tracker Logging"
+                           i18n:attributes="value label_stopTracker;" />
+                    <input class="submit-widget"
+                           type="submit"
                            name="form.button.refresh"
                            value="Refresh"
                            i18n:attributes="value label_refresh;" />
