@@ -15,7 +15,7 @@ class IConflictTrackerSchema(Interface):
     )
     Log_Root_Path=schema.TextLine(
         title=_(u'label_logpath', default=u'Specify the parent directory of event log files'),
-        default=u''+os.environ.get('event_root_path'),
+        default=os.environ.get('event_root_path'),
         required=True
     )
     Time_Interval=schema.Int(
