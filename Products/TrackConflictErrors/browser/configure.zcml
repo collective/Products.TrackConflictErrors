@@ -36,4 +36,10 @@
         permission="zope2.View"
         class=".views.StartTracker"
         />
+   <browser:page
+        name="track-conflict"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        permission="zope2.View"
+        class=".checker.CheckLog"
+        />
 </configure>

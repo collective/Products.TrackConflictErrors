@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ <object name="conflicttracker_properties" meta_type="Plone Property Sheet">
+  <property name="title">Conflict Tracker properties</property>
+  <property name="logfiles" type="lines" />
+  <property name="interval" type="int">60</property>
+  <property name="timestamps" type="lines" />
+ </object>
+</object>
