@@ -5,6 +5,7 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="Products.TrackConflictErrors">
+
    <!-- Resource directory for javascripts -->
     <browser:resourceDirectory
         name="Products.TrackConflictErrors.javascripts"
@@ -16,30 +17,12 @@
         name="Products.TrackConflictErrors.stylesheets"
         directory="css"
         />
-    <browser:page
-        name="tracker"
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        permission="zope2.View"
-        class=".views.TrackerView"
-        template="TrackerReport.pt"
-        />
-   <browser:page
-        name="tracker-clear"
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        permission="zope2.View"
-        class=".views.ClearTracker"
-        />
 
-   <browser:page
-        name="tracker-start"
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        permission="zope2.View"
-        class=".views.StartTracker"
-        />
    <browser:page
         name="track-conflict"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         permission="zope2.View"
         class=".checker.CheckLog"
         />
+
 </configure>

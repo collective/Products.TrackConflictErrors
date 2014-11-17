@@ -6,7 +6,11 @@ from Products.Five.browser import BrowserView
 # -----------
 #
 # Since St_ctime and Seek are not persisted,
-# when zope is restarted the log files will be reprocessed
+# every time zope is restarted, the log files
+# will be reprocessed. No harm since we store only
+# increasing timestamps.
+#
+# We could stick these in another property if needed.
 #
 
 Timestamp_Pattern = re.compile('\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}')

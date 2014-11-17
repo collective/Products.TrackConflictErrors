@@ -25,8 +25,6 @@ setup(name='Products.TrackConflictErrors',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.registry'
-          # -*- Extra requirements: -*-
       ],
       entry_points="""
       # -*- Entry points: -*-

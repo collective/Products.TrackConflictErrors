@@ -9,7 +9,6 @@
   <five:registerPackage package="."/>
   <i18n:registerTranslations directory="locales"/>
   <include package=".browser"/>
-  <include package="plone.app.registry" />
   <genericsetup:registerProfile
       name="default"
       title="Products.TrackConflictErrors"
@@ -17,11 +16,4 @@
       description="Installs the Products.TrackConflictErrors package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
-  <browser:page
-        name="ConflictTracker-settings"
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        class=".controlpanel.ConflictTrackerSettingsControlPanel"
-        permission="cmf.ManagePortal"
-        />
 </configure>
