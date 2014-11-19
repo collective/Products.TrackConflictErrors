@@ -5,7 +5,7 @@ Plone product to keep track of conflict errors.
 
 It does this by scanning the event log for Conflict Errors.
 
-It exposes a single view methos: http://<url-of-plone-site>/track-conflict
+It exposes a single view method: http://<url-of-plone-site>/track-conflict
 
 Needs to be installed using quickinstaller.
 
